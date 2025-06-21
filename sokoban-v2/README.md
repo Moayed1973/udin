@@ -1,7 +1,5 @@
 # Sokoban-v2
 
-[![Demo Video](/demo-thumbnail.jpg)](https://youtu.be/demo-link)
-
 ## Features
 
 - 🧩 Interactive Sokoban puzzles
