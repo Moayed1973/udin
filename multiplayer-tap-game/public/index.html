@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tap Sprint Game</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 40px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 10px;
+      }
+      #game {
+        display: none;
+      }
+      #winner {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Multiplayer Tapping Game</h1>
+    <button id="readyBtn">I'm Ready</button>
+    <div id="waiting">Waiting for other players...</div>
+
+    <div id="game">
+      <p>Tap the SPACEBAR as fast as you can!</p>
+      <p>Time left: <span id="timer">15</span>s</p>
+      <p>Your taps: <span id="tapCount">0</span></p>
+    </div>
+
+    <div id="winner"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
